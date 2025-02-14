@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(13, 13, 134, 0.614);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+.container{
+    width: 500px;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+h1{
+    border-bottom: 3px solid grey;
+    padding: 10px 0;
+}
+.btn{
+    width: 100%;
+    padding: 14px ;
+    border: 3px solid rgba(13, 13, 134, 0.614);
+    background-color: grey;
+    color: white;
+    transition: all .3s ease-in-out;
+    text-align: left;
+}
+.next{
+    width: 30%;
+    align-self: center;
+    padding: 14px ;
+    border: 2px solid rgba(13, 13, 134, 0.614);
+    background-color: grey;
+    color: white;
+    display: none;
+}
+.next:hover{
+    cursor: pointer;
+    border: 3px solid rgba(13, 13, 134, 0.614);
+    background-color: white;
+    color: grey;
+}
+.btn:hover:not([disabled]){
+    cursor: pointer;
+    border: 2px solid rgba(13, 13, 134, 0.614);
+    background-color: white;
+    color: grey;
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+.quiz{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+.options{
+    display: flex;  
+    flex-direction: column;
+    gap: 10px;
+}
+.correct{
+    background-color: green;
+}
+.wrong{
+    background-color: red;
+}
